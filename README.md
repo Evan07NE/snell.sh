@@ -25,7 +25,7 @@ lsmod | grep bbr
 ```
 
 
-## 非docker使用方法
+## 非docker使用方法(同步snell协议更新，为最新版)
 Debian & Ubuntu 用户请运行
 
 ```
