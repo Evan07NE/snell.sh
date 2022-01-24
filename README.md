@@ -90,7 +90,7 @@ docker run -d --env PORT=7770 --env PSK=dFDL0H4NFMOieRyeb6Ly59EJUwrCiEg --env OB
 ```
 其中：
 
-端为7770
+端口为7770
 
 PSK为dFDL0H4NFMOieRyeb6Ly59EJUwrCiEg
 
