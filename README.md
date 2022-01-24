@@ -6,7 +6,7 @@
 ## https://github.com/primovist/snell-docker
 ## https://hub.docker.com/repository/docker/primovist/snell-docker
 
-##先进行系统的更新及组件安装
+## 先进行系统的更新及组件安装
 ```
 apt update -y          #Debian/Ubuntu 
 apt install -y curl    #Debian/Ubuntu 
