@@ -69,8 +69,33 @@ service docker start #运行
 
 docker pull primovist/snell-docker #拉取镜像文件
 
-docker run -p 8388:8388 -p 8388:8388/udp -d \ #运行docker容器
+#运行docker容器的模版，可自行修改
+#docker run -d [--env PORT=SERVER_PORT] [--env PSK=PSK_KEYS] [--env OBFS=tls] -p PORT:PORT -p PORT:PORT/udp --name snell-server [-v CONFIG_DIR:/etc/snell/] 
+--restart=always primovist/snell-docker
 
---restart always --name=snell deercloud/snell\ 
+其中：
+
+SERVER_PORT为端口自定义端口CONFIG为自定义配置文件位置
+
+PSK_KEYS为自定义PSK
+
+CONFIG_DIR为自定义配置文件目录
+
+“OBFS=”后可改为http(推荐使用tls)
+
+#或者你也可以直接运行这条命令
+docker run -d --env PORT=7770 --env PSK=dFDL0H4NFMOieRyeb6Ly59EJUwrCiEg --env OBFS=tls -p 7770:7770 -p 7770:7770/udp --name snell-server -v /etc/snell/:/etc/snell/ 
+--restart=always primovist/snell-docker
+
+其中：
+
+端为7770
+
+PSK为dFDL0H4NFMOieRyeb6Ly59EJUwrCiEg
+
+配置文件目录为/etc/snell/
+
+OBFS为tls
+
 
 docker logs snell #查看snell配置
