@@ -57,13 +57,11 @@ chmod +x uninstall-snell.sh
 ```
 
 Docker使用方法
-
+```
 curl -sSL https://get.docker.com/ | sh #安装docker
-
 service docker start #运行
-
 docker pull primovist/snell-docker #拉取镜像文件
-
+```
 #运行docker容器的模版，可自行修改
 
 #docker run -d [--env PORT=SERVER_PORT] [--env PSK=PSK_KEYS] [--env OBFS=tls] -p PORT:PORT -p PORT:PORT/udp --name snell-server [-v CONFIG_DIR:/etc/snell/] 
