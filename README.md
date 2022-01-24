@@ -2,6 +2,7 @@
 ## 适用于64位Linux系统。
 ## 运行完毕后屏幕显示psk，默认端口号7770，按照标准填入Surge即可。
 ## 请使用root用户运行
+## 同步snell协议更新
 ## 建议使用docker
 ## https://github.com/primovist/snell-docker
 ## https://hub.docker.com/repository/docker/primovist/snell-docker
@@ -27,7 +28,7 @@ lsmod | grep bbr
 ```
 
 
-## 非docker使用方法(同步snell协议更新，为最新版)
+## 非docker使用方法
 Debian & Ubuntu 用户请运行
 
 ```
@@ -78,7 +79,7 @@ chmod +x uninstall-snell.sh
 ./uninstall-snell.sh
 ```
 
-## Docker使用方法（此方法可能使用的为旧版snell协议 --2.05）
+## Docker使用方法
 ```
 curl -sSL https://get.docker.com/ | sh #安装docker
 service docker start #运行
