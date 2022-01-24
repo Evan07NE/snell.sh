@@ -41,11 +41,17 @@ systemctl status snell
 管理Snell服务命令：
 
 systemctl status snell #查看运行状态
+
 systemctl restart snell #重启Snell服务
+
 systemctl start snell #启动Snell服务
+
 systemctl stop snell #停止Snell服务
+
 cat /etc/snell/snell-server.conf #查看Snell配置文件
+
 vi /etc/snell/snell-server.conf #修改Snell配置文件
+
 
 卸载方法：
 
@@ -58,11 +64,13 @@ chmod +x uninstall-snell.sh
 Docker使用方法
 
 curl -sSL https://get.docker.com/ | sh #安装docker
+
 service docker start #运行
 
 docker pull primovist/snell-docker #拉取镜像文件
 
 docker run -p 8388:8388 -p 8388:8388/udp -d \ #运行docker容器
+
 --restart always --name=snell deercloud/snell\ 
 
 docker logs snell #查看snell配置
