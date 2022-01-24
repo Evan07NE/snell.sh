@@ -57,7 +57,7 @@ chmod +x uninstall-snell.sh
 ./uninstall-snell.sh
 ```
 
-## Docker使用方法
+## Docker使用方法（此方法可能使用的为旧版snell协议 --2.05）
 ```
 curl -sSL https://get.docker.com/ | sh #安装docker
 service docker start #运行
