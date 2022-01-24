@@ -98,15 +98,13 @@ docker logs snell
 ```
 
 
-Snell客户端配置
+## Snell客户端配置
 目前，支持Snell协议的常用客户端有 Trojan-Qt5、Clash、Shadowrocket 和 Surge，其中 Trojan-Qt5 只支持Windows/MacOS/Linux，Clash客户端支持Windows/MacOS/Linux/Android/网关路由器等平台（不支持iOS系统），安卓端使用 Clash for Android，苹果iOS端使用 Shadowrocket 或 Surge for iOS，Mac端也可以使用 surge for Mac 。
 
 搭建成功的Snell服务器配置参数只有4个，具体配置示例如下：
-
+```
  IP地址：x.x.x.x
- 
  端口：7770
- 
  PSK ：dFDL0H4NFMOieRyeb6Ly59EJUwrCiEg
- 
  obfs ： tls
+```
