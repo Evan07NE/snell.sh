@@ -6,6 +6,25 @@
 ## https://github.com/primovist/snell-docker
 ## https://hub.docker.com/repository/docker/primovist/snell-docker
 
+##先进行系统的更新及组件安装
+
+apt update -y          #Debian/Ubuntu 
+apt install -y curl    #Debian/Ubuntu 
+apt-get install wget   #Debian/Ubuntu 
+yum update -y          #CentOS 
+yum install -y curl    #CentOS 
+yum -y install wget    #CentOS
+
+开启系统自带bbr加速
+
+```
+echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
+echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
+sysctl -p
+lsmod | grep bbr
+```
+
+
 ## 非docker使用方法
 Debian & Ubuntu 用户请运行
 
