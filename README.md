@@ -63,7 +63,7 @@ service docker start #运行
 docker pull primovist/snell-docker #拉取镜像文件
 ```
 
-#你可以直接运行这条命令来配置snell,也可以自行修改
+#你可以直接运行以下命令来配置snell,也可以自行修改
 ```
 docker run -d --env PORT=7770 --env PSK=dFDL0H4NFMOieRyeb6Ly59EJUwrCiEg --env OBFS=tls -p 7770:7770 -p 7770:7770/udp --name snell-server -v /etc/snell/:/etc/snell/ 
 --restart=always primovist/snell-docker
