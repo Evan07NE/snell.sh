@@ -7,14 +7,14 @@
 ## https://hub.docker.com/repository/docker/primovist/snell-docker
 
 ##先进行系统的更新及组件安装
-
+```
 apt update -y          #Debian/Ubuntu 
 apt install -y curl    #Debian/Ubuntu 
 apt-get install wget   #Debian/Ubuntu 
 yum update -y          #CentOS 
 yum install -y curl    #CentOS 
 yum -y install wget    #CentOS
-
+```
 开启系统自带bbr加速
 
 ```
