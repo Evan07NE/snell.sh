@@ -103,7 +103,10 @@ Snell客户端配置
 
 搭建成功的Snell服务器配置参数只有4个，具体配置示例如下：
 
- IP地址：1.2.3.4
- 端口：16888
- PSK ：gl64TpuvRPRp0uLM
+ IP地址：x.x.x.x
+ 
+ 端口：7770
+ 
+ PSK ：dFDL0H4NFMOieRyeb6Ly59EJUwrCiEg
+ 
  obfs ： tls
