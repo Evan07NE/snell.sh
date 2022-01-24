@@ -6,7 +6,7 @@
 ## https://github.com/primovist/snell-docker
 ## https://hub.docker.com/repository/docker/primovist/snell-docker
 
-##非docker使用方法
+## 非docker使用方法
 Debian & Ubuntu 用户请运行
 
 ```
@@ -57,7 +57,7 @@ chmod +x uninstall-snell.sh
 ./uninstall-snell.sh
 ```
 
-##Docker使用方法
+## Docker使用方法
 ```
 curl -sSL https://get.docker.com/ | sh #安装docker
 service docker start #运行
