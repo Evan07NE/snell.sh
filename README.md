@@ -11,11 +11,11 @@
 ```
 apt update -y          #Debian/Ubuntu 
 apt install -y curl    #Debian/Ubuntu 
-apt install -y socat   #Debian/Ubuntu 
+apt install -y socat   #Debian/Ubuntu 此条可不装
 apt-get install wget   #Debian/Ubuntu 
 yum update -y          #CentOS 
 yum install -y curl    #CentOS 
-yum install -y socat   #CentOS
+yum install -y socat   #CentOS 此条可不装
 yum -y install wget    #CentOS
 ```
 开启系统自带bbr加速
