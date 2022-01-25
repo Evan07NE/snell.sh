@@ -113,5 +113,5 @@ docker logs snell
  端口: 7770
  PSK: dFDL0H4NFMOieRyeb6Ly59EJUwrCiEg
  obfs: tls
- obfs-host = www.bing.com
+ obfs-host: www.bing.com
 ```
